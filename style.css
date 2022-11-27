@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.8);
+  box-shadow: 0 2px 5px #ccc;
+}
+nav .logo img {
+  width: 60px;
+  height: 60px;
+}
+nav .linkwed a {
+  text-decoration: none;
+  color: black;
+  margin: 0 30px;
+}
+nav .linkPic a {
+  text-decoration: none;
+}
+nav .linkPic a img {
+  width: 40px;
+}
+
+.mySwiper img {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
