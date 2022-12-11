@@ -48,27 +48,78 @@
             </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
         <div class="swiper-pagination"></div>
+        <!-- 箭頭 -->
+        <img class="right arr" src="./map/right.png" alt="">
+        <img class="left arr" src="./map/left.png" alt="">
+    </div>
+    <!-- 最新消息 -->
+    <div class="newsBox">
+
+        <div class="news">
+            <div class="news_left">
+                <h3>可可柚香那堤</h3>
+                <hr>
+                <p>醇厚溫潤的摩卡與蜂蜜紅柚的香氣結合，飲品上方再加上帶有焦糖榛果風味的鮮奶油，在品嘗間體會口中風味多層次的變化，餘韻中帶有柚香的清爽與巧克力融合的甘甜，以豐富的迷人滋味共同歡慶五百店的美好記憶。</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="news_right">
+                <img src="./map/10.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="news newTwo">
+            <div class="news_left">
+                <h3>雲朵冰搖濃縮咖啡</h3>
+                <hr>
+                <p>創新的現煮義式飲品!滿足咖啡饕客的咖啡味蕾。綿滑香柔的雲朵(冰奶泡)是由低脂牛奶打製而成，倒入杯中後再添加手工搖製，濃郁香醇的冰搖濃縮咖啡，在冰鎮清爽的滋味中，品嘗兩者交織出的驚喜風味！</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="news_right">
+                <img src="./map/11.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="news">
+            <div class="news_left">
+                <h3>濃焦糖那堤</h3>
+                <hr>
+                <p>焦糖和那堤咖啡愛好者無法抗拒的奢華享受。由深焦糖醬和蒸煮牛奶以及經典濃縮咖啡的組合，上方再加上鮮奶油與深焦糖醬</p>
+                <a href="">MORE</a>
+            </div>
+            <div class="news_right">
+                <img src="./map/12.jpg" alt="">
+            </div>
+        </div>
+
     </div>
 
-   <!-- CDN -->
+    <!-- CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- 啟動工具 -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+            // 輪播間的距離
             spaceBetween: 30,
-            loop:true,
+            // 無限循環
+            loop: true,
+            // 效果
             effect: "fade",
+            //    箭頭
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".right",
+                prevEl: ".left",
             },
+            //    點點
             pagination: {
                 el: ".swiper-pagination",
+                // 是否可點擊
                 clickable: true,
             },
+            // 自動播放
             autoplay: {
                 delay: 1000,
                 disableOnInteraction: false,

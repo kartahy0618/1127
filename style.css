@@ -28,9 +28,58 @@ nav .linkPic a img {
   width: 40px;
 }
 
+.mySwiper {
+  position: relative;
+}
 .mySwiper img {
   height: 100vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.arr {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: auto !important;
+  height: auto !important;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.newsBox {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.newsBox .news {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 20px;
+  grid-template-areas: "new_left new_right ";
+}
+.newsBox .news .news_left {
+  grid-area: new_left;
+}
+.newsBox .news .news_right {
+  grid-area: new_right;
+}
+.newsBox .news .news_right img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsBox .newTwo {
+  grid-template-areas: "new_right new_left  ";
+  grid-template-columns: 65% 35%;
 }/*# sourceMappingURL=style.css.map */
