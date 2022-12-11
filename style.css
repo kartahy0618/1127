@@ -70,6 +70,25 @@ nav .linkPic a img {
 .newsBox .news .news_left {
   grid-area: new_left;
 }
+.newsBox .news .news_left h3 {
+  margin: 20px;
+}
+.newsBox .news .news_left p {
+  padding: 10px;
+  width: 300px;
+  line-height: 2;
+}
+.newsBox .news .news_left a {
+  text-decoration: none;
+  padding: 8px 50px;
+  border: 1px #226641 solid;
+  color: #226641;
+  transition: 0.5s;
+}
+.newsBox .news .news_left a:hover {
+  color: #eee;
+  background-color: #226641;
+}
 .newsBox .news .news_right {
   grid-area: new_right;
 }

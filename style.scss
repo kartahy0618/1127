@@ -65,9 +65,28 @@ nav {
         display: grid;
         grid-template-columns: 35% 65%;
         grid-gap: 20px;
-        grid-template-areas:"new_left new_right " ;
+        grid-template-areas: "new_left new_right ";
         .news_left {
             grid-area: new_left;
+           h3{
+            margin: 20px;
+           }
+            p{
+            padding: 10px;
+            width: 300px;
+            line-height: 2;
+           }
+            a {
+                text-decoration: none;
+                padding: 8px 50px;
+                border: 1px #226641 solid;
+                color: #226641;
+               transition: 0.5s;
+               &:hover{
+                color: #eee;
+                background-color: #226641;
+               }
+            }
         }
         .news_right {
             grid-area: new_right;
@@ -78,8 +97,8 @@ nav {
             }
         }
     }
-    .newTwo{
-        grid-template-areas:"new_right new_left  " ; 
+    .newTwo {
+        grid-template-areas: "new_right new_left  ";
         grid-template-columns: 65% 35%;
     }
 }
