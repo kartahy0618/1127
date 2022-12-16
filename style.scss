@@ -65,27 +65,27 @@ nav {
         display: grid;
         grid-template-columns: 35% 65%;
         grid-gap: 20px;
-        grid-template-areas: "new_left new_right ";
+        grid-template-areas: " new_left new_right";
         .news_left {
             grid-area: new_left;
-           h3{
-            margin: 20px;
-           }
-            p{
-            padding: 10px;
-            width: 300px;
-            line-height: 2;
-           }
+            h3 {
+                margin: 20px;
+            }
+            p {
+                padding: 10px;
+                width: 300px;
+                line-height: 2;
+            }
             a {
                 text-decoration: none;
                 padding: 8px 50px;
                 border: 1px #226641 solid;
                 color: #226641;
-               transition: 0.5s;
-               &:hover{
-                color: #eee;
-                background-color: #226641;
-               }
+                transition: 0.5s;
+                &:hover {
+                    color: #eee;
+                    background-color: #226641;
+                }
             }
         }
         .news_right {
@@ -100,5 +100,63 @@ nav {
     .newTwo {
         grid-template-areas: "new_right new_left  ";
         grid-template-columns: 65% 35%;
+    }
+}
+
+.contentBox {
+    width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    img {
+        width: 100%;
+        height: 600px;
+        object-fit: contain;
+    }
+    .one_2 {
+        h3 {
+            text-align: center;
+            margin: 10px;
+        }
+    }
+    p {
+        padding: 10px 0 30px;
+    }
+    a {
+        padding: 8px 50px;
+        text-decoration: none;
+        border: 1px #226641 solid;
+
+        transition: 0.5s;
+        &:hover {
+            color: #eee;
+            background-color: #226641;
+        }
+    }
+}
+.end {
+    background-color: #eee;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    .end_2 {
+        padding: 10px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .end_3 {
+        margin: 20px 0;
+        a {
+            text-decoration: none;
+            color: #226641;
+        }
+    }
+    .copy {
+        color: rgb(146, 144, 144);
     }
 }
