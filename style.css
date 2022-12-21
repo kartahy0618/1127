@@ -16,6 +16,11 @@ nav {
   background-color: rgba(238, 238, 238, 0.8);
   box-shadow: 0 2px 5px #ccc;
 }
+@media screen and (min-width: 450px) {
+  nav {
+    grid-template-columns: 10% 60% 30%;
+  }
+}
 nav .logo img {
   width: 60px;
   height: 60px;
@@ -95,6 +100,11 @@ nav .linkPic a img {
 @media screen and (max-width: 768px) {
   .newsBox .news .news_left h3 {
     margin: 10px 72px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsBox .news .news_left hr {
+    margin: 0 10px;
   }
 }
 .newsBox .news .news_left p {
