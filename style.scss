@@ -15,7 +15,19 @@ nav {
     align-items: center;
     background-color: rgba(#eee, 0.8);
     box-shadow: 0 2px 5px #ccc;
-
+    @media screen and(max-width:768px) {
+        width: 767px;
+        grid-template-columns: 20% 65% 15%;
+    }
+    @media screen and(max-width:450px) {
+        width: 100%;
+        grid-template-columns: 16% 69% 30%;
+    }
+    @media screen and(max-width:414px) {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
     .logo {
         img {
             width: 60px;
@@ -23,6 +35,9 @@ nav {
         }
     }
     .linkwed {
+        @media screen and(max-width:414px) {
+            display: none;
+        }
         a {
             text-decoration: none;
             color: black;
@@ -42,14 +57,54 @@ nav {
         @media screen and(max-width:768px) {
             display: flex;
         }
+        @media screen and(max-width:414px) {
+            display: none;
+        }
     }
-    @media screen and(max-width:768px) {
-        width: 767px;
-        grid-template-columns: 20% 65% 15%;
+    .menu {
+        display: none;
+        @media screen and(max-width:414px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
-    @media screen and(max-width:450px) {
-        width: 100%;
-        grid-template-columns: 16% 69% 30%;
+    .menu_data {
+        display: none;
+        @media screen and(max-width:414px) {
+            display:block;
+            // 固定
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+
+        }
+        .err {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 10px;
+            top: 24px;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            border-bottom:2px solid black;
+        }
     }
 }
 .mySwiper {
@@ -91,7 +146,7 @@ nav {
         @media screen and(max-width:450px) {
             display: flex;
             flex-direction: column-reverse;
-            gap:0;
+            gap: 0;
         }
         .news_left {
             grid-area: new_left;
@@ -131,8 +186,7 @@ nav {
                     margin: 0 57px;
                 }
                 @media screen and(max-width:450px) {
-                    margin: 120px ;
-
+                    margin: 120px;
                 }
             }
         }
@@ -203,13 +257,17 @@ nav {
     }
 }
 .contentBox_768 {
+    //         display: none;
+    // @media screen and(max-width:900px) {
+    //         display: block;
+    //     }
     @media screen and(min-width:900px) {
         display: none;
     }
     .content_768 {
         display: flex;
         margin: 0 20px;
-        @media screen and(max-width:450px){
+        @media screen and(max-width:450px) {
             margin: 16px;
         }
     }
@@ -217,7 +275,7 @@ nav {
         width: 350px;
         height: 320px;
         object-fit: contain;
-        @media screen and(max-width:450px){
+        @media screen and(max-width:450px) {
             width: 200px;
             height: 730px;
             margin: -169px 8px;
